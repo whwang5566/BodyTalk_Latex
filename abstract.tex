@@ -1,0 +1,23 @@
+\begin{abstractzh}
+
+螢幕共享 (Screen Sharing) 在 PC 上已經發展很久的技術，在 PC 上有許多螢幕共享的軟體，例如： VNC 、 Windows Remote Desktop 等。在行動裝置上，也有越來越多的設備支援螢幕鏡像輸出 (Screen Mirroring) ，例如： iOS 及 Apple TV 支援 AirPlay Mirroring 、 Android 手機上支援 Miracast ，以及 Chromecast 也即將支援和 Android 的螢幕鏡像輸出。我們發現在手機的鏡像輸出串流中，因為行動裝置的視覺回饋，可能會導致新的攻擊手法，例如：按下螢幕上的虛擬鍵盤，所按的鍵會放大，以增進使用者體驗，但是若此時攻擊者能攔截到鏡像串流的畫面資料，那麼使用者的輸入資料將會完全外洩，即使是在輸入密碼時也一樣。我們針對 AirPlay Mirroring ，實作了一套的中間人攻擊 (Man-in-the-middle Attack) 程式，能自動化的截取出 iOS 設備鏡像串流中所輸入的密碼，證明確實存在此安全問題。最後，針對此攻擊，我們也提出了幾個包括系統層面，或是安全協定層面的解決方法。
+
+\end{abstractzh}
+
+\begin{abstracten}
+
+The idea of sharing contents throughout different screens had been widely applied on personal computers for many years, such as the VNC, Remote Desktop and other related applications. While on mobile devices, the similar technique (a.k.a Screen Mirroring) had become more and more popular through these years. For instance, Apple had developed AirPlay Mirroring technique to stream contents from iOS devices to Apple TVs; Google also developed corresponding technique to share screen contents between Android devices and Chromecasts. Based on the observation of how users interact with such technique on real devices, we discovered a new attacking approach base on the fact that the visual feedbacks (e.g. the selected key will be highlighted when typing with virtual keyboard) on mobile devices are not well protected during the streaming process. To prove our concept, we implemented a system using man-in-the-middle attack approach to steal the secret codes when users enter them on their own devices while streaming contents to the remote screen. Finally, we provided some possible solutions to prevent the proposed attacking approach.
+
+\end{abstracten}
+
+\begin{comment}
+\category{I2.10}{Computing Methodologies}{Artificial Intelligence --
+Vision and Scene Understanding} \category{H5.3}{Information
+Systems}{Information Interfaces and Presentation (HCI) -- Web-based
+Interaction.}
+
+\terms{Design, Human factors, Performance.}
+
+\keywords{Region of interest, Visual attention model, Web-based
+games, Benchmarks.}
+\end{comment}

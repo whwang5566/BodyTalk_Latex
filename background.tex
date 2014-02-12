@@ -1,0 +1,19 @@
+\chapter{Background}
+
+The focus of our investigation is the screen mirroring on mobile devices. In this section, we give a brief overview of how screen mirroring works on mobile device and how MITM attack is possible against it.
+
+\section{How Mirroring works}
+
+There are several variant screen mirroring implementations on mobile devices. AirPlay Mirroring allow iOS devices mirror display content to an Apple TV in the local wireless network. Miracast is a peer-to-peer wireless screencasting standard. The mirroring data is transmitted via Wi-Fi Direct connection. The Chromecast may add the mirroring feature in the near future. There is a API in Android document about capturing video output of Android devices~\cite{CAPTUREVIDEOOUTPUT}, though it is not for use by third-party applications.
+
+\section{AirPlay Protocol}
+
+AirPlay is a close source protocol developed by Apple Inc. It could be used to wireless streaming of audio, video, and photos between devices. Here we focus on the mirroring protocol in AirPlay.
+
+Although AirPlay protocol is close source, an unofficial specification~\cite{unofficial} explains it. The protocol is based on well-known standard networking protocols such as Multicast DNS, HTTP, RTSP, RTP or NTP. Users normally use iOS devices as the AirPlay Mirroring sender, and use Apple TV as the receiver. But there are also several third-party software that implemented AirPlay Mirroring protocol. For mirroring sender, there is AirParrot~\cite{AirParrot}, and for mirroring receiver, there are AirServer~\cite{AirServer} and Reflector~\cite{Reflector}. The mirroring stream is encoded by H.264 codec.
+
+To launch MITM attack, we analyzed the AirPlay Mirroring protocol, and found that the iOS device (mirroring sender) initiates the key exchange with Apple TV (mirroring receiver) to generate a shared key every session. The streaming data is encrypted by the shared key. However, we could also initiate the AirPlay Mirroring connection from the third-party software without encryption. In other words, Apple TV could accept both encrypted and unencrypted mirroring stream, but iOS device always initiates encrypted mirroring stream.
+
+\section{MITM Attack}
+
+In a MITM attack, the attacker is in a position between sender and receiver. When sender initiates the encrypted connection to receiver, the attacker acts as a receiver and generates a shared key with sender (key A). Then the attacker acts as a sender to generate another shared key with receiver (key B). After the stream begin, the attacker intercepts all packet from sender and decrypts it using key A to get the raw data. The attack then encrypts the raw data with key B and sends it to receiver. Both sender and receiver will not notice that all "encrypted" packets are intercepted and could be decrypted easily. We will explain the environment and more attack detail in next section.

@@ -1,0 +1,7 @@
+\chapter{Related Work}
+
+Several formal approaches have beed used to examine the screen sharing protocol on PC. Kerai~\cite{kerai2010remote, kerai2010tracing} traces the VNC and RDP software on Windows and Windows Mobile Platform for forensic purpose. The study shows that it is possible to retrieve artefacts produced and left behind by VNC and RDP software. These include IP address, server name, and even plaintext password.
+
+There was report about the feasibility of invisible man-in-the-middle (MITM) attacks against old version Microsoft Terminal Services~\cite{RDPUgly}. The VNC also suffered from MITM attack in the past since a design flaw in the client authentication~\cite{WeakATTVNC}. On the other hand, several researches were trying to improve screen sharing security on PC. Egawa et al.~\cite{FBCrypt} proposed FBCrypt for encrypting the inputs and outputs between a VNC client and a user virtual machine using the virtual machine monitor. Cai et al.~\cite{RDPSSLVPN} implemented RDP client over SSL VPN to provide secure authentication and avoid possible attacks, e.g., MITM attack and password-guessing attack.
+
+These formal researches focused on VNC and RDP protocol on PC. In this paper, we propose a new attack vector in screen mirroring on mobile devices and present a MITM attack on AirPlay Mirroring, which is the screen mirroring solution on iOS devices.

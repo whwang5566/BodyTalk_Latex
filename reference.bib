@@ -1,0 +1,215 @@
+---Introduction---
+
+@misc{RFB,
+    title = {{The Remote Framebuffer Protocol 3.8}},
+    note = {\url{http://www.realvnc.com/docs/rfbproto.pdf}},
+}
+
+@misc{RDP,
+    title = {{[MS-RDPBCGR]: Remote Desktop Protocol: Basic Connectivity and Graphics Remoting}},
+    note = {\url{http://msdn.microsoft.com/en-us/library/cc240445.aspx}},
+}
+
+@misc{RDS,
+    title = {{[MS-RDSOD]: Remote Desktop Services Protocols Overview}},
+    note = {\url{http://msdn.microsoft.com/en-us/library/hh871750.aspx}},
+}
+
+@misc{GoogleTwoStep,
+    title = {{Google 2-Step Verification}},
+    note = {\url{http://www.google.com/landing/2step/}},
+}
+
+---Related Work---
+
+@article{kerai2010remote,
+    title={Remote access forensics for VNC and RDP on Windows platform},
+    author={Kerai, Paresh},
+    year={2010}
+}
+
+@article{kerai2010tracing,
+    title={Tracing VNC and RDP protocol artefacts on Windows mobile and Windows smartphone for forensic purpose},
+    author={Kerai, Paresh},
+    year={2010},
+    publisher={School of Computer and Information Science, Security Research Centre, Edith Cowan University, Perth, Western Australia}
+}
+
+@article{RDPUgly,
+    title = {{Remote Desktop Protocol, the Good the Bad and the Ugly}},
+    year = 2005,
+    author = {Montoro, Massimiliano},
+    note = {\url{http://www.oxid.it/downloads/rdp-gbu.pdf}},
+}
+
+@INPROCEEDINGS{FBCrypt, 
+    author={Egawa, T. and Nishimura, N. and Kourai, K.}, 
+    booktitle={Cloud Computing Technology and Science (CloudCom), 2012 IEEE 4th International Conference on}, 
+    title={Dependable and secure remote management in IaaS clouds}, 
+    year={2012}, 
+    month={Dec}, 
+    pages={411-418}, 
+    keywords={client-server systems;cloud computing;cryptography;virtual machines;FBCrypt;IaaS clouds;VMM;VNC;VNC client;framebuffer;information leakage prevention;infrastructure-as-a-service clouds;input decryption;management VM;out-of-band remote management;pixel data encryption;remote management dependability;remote management security;remote management software;sensitive information protection;system failures;user VM;virtual machine monitor;virtual machines;virtual network computing;Conferences;Encryption;Hardware;Keyboards;Servers;Virtual machine;information leakage;remote management}, 
+    doi={10.1109/CloudCom.2012.6427597}
+}
+
+@inproceedings{RDPSSLVPN,
+    author = {Longzheng, Cai and Shengsheng, Yu and Jing-li, Zhou},
+    title = {Research and Implementation of Remote Desktop Protocol Service Over SSL VPN},
+    booktitle = {Proceedings of the 2004 IEEE International Conference on Services Computing},
+    series = {SCC '04},
+    year = {2004},
+    isbn = {0-7695-2225-4},
+    pages = {502--505},
+    numpages = {4},
+    url = {http://dl.acm.org/citation.cfm?id=1025130.1026190},
+    acmid = {1026190},
+    publisher = {IEEE Computer Society},
+    address = {Washington, DC, USA},
+}
+
+@misc{WeakATTVNC,
+    title = {{Weak authentication in ATT VNC allows man-in-the-middle attack}},
+    author = {Arce, I},
+    year = {2010},
+    publisher = {Retrieved}
+}
+
+---Solutions---
+
+寫在解法那裡
+@incollection{SyncTap,
+    year = {2003},
+    isbn = {978-3-540-40821-5},
+    booktitle = {Human-Computer Interaction with Mobile Devices and Services},
+    volume = {2795},
+    series = {Lecture Notes in Computer Science},
+    editor = {Chittaro, Luca},
+    doi = {10.1007/978-3-540-45233-1_9},
+    title = {SyncTap: An Interaction Technique for Mobile Networking},
+    url = {http://dx.doi.org/10.1007/978-3-540-45233-1_9},
+    publisher = {Springer Berlin Heidelberg},
+    author = {Rekimoto, Jun and Ayatsuka, Yuji and Kohno, Michimune},
+    pages = {104-115}
+}
+
+解法
+@incollection{Amigo,
+    year = {2007},
+    isbn = {978-3-540-74852-6},
+    booktitle = {UbiComp 2007: Ubiquitous Computing},
+    volume = {4717},
+    series = {Lecture Notes in Computer Science},
+    editor = {Krumm, John and Abowd, GregoryD. and Seneviratne, Aruna and Strang, Thomas},
+    doi = {10.1007/978-3-540-74853-3_15},
+    title = {Amigo: Proximity-Based Authentication of Mobile Devices},
+    url = {http://dx.doi.org/10.1007/978-3-540-74853-3_15},
+    publisher = {Springer Berlin Heidelberg},
+    author = {Varshavsky, Alex and Scannell, Adin and LaMarca, Anthony and Lara, Eyal},
+    pages = {253-270}
+}
+
+---Background---
+
+@misc{CAPTUREVIDEOOUTPUT,
+    title = {{Android Permission}},
+    note = {\url{http://developer.android.com/reference/android/Manifest.permission.html#CAPTURE_VIDEO_OUTPUT}},
+}
+
+@misc{unofficial,
+    title = {{Unofficial AirPlay Protocol Specification}},
+    note = {\url{http://nto.github.io/AirPlay.html}},
+}
+
+@misc{AirParrot,
+    title = {{AirParrot}},
+    note = {\url{http://www.airsquirrels.com/airparrot/}},
+}
+
+@misc{AirServer,
+    title = {{AirServer}},
+    note = {\url{http://www.airserver.com}},
+}
+
+@misc{Reflector,
+    title = {{Reflector}},
+    note = {\url{http://www.airsquirrels.com/reflector/}},
+}
+
+---Note---
+
+還有幾篇和這個有關的，同一個作者寫的 Bluetooth MITM
+有需要記得再加
+@INPROCEEDINGS{BluetoothMITM,
+    author = {Haataja, K. and Toivanen, P.},
+    booktitle = {Wireless Communications, Networking and Mobile Computing, 2008. WiCOM '08. 4th International Conference on},
+    title = {Practical Man-in-the-Middle Attacks Against Bluetooth Secure Simple Pairing},
+    year = {2008},
+    month = {Oct},
+    pages = {1-5},
+    keywords = {Bluetooth;security of data;Bluetooth secure simple pairing;man-in-the-middle attacks;Bluetooth;Computer science;Directional antennas;Jamming;Microprogramming;Mobile handsets;Personal area networks;Radio frequency;Security;Wireless communication},
+    doi = {10.1109/WiCom.2008.1153}
+}
+
+@INPROCEEDINGS{NFC,
+    author = {Mulliner, C.},
+    booktitle = {Availability, Reliability and Security, 2009. ARES '09. International Conference on},
+    title = {Vulnerability Analysis and Attacks on NFC-Enabled Mobile Phones},
+    year = {2009},
+    month = {March},
+    pages = {695-700},
+    keywords = {invasive software;mobile computing;object-oriented programming;telecommunication security;NFC-based worm;NFC-enabled mobile phone;denial-of-service attack;near field communication;security testing;software component;tag content spoofing;vulnerability analysis;Availability;Computer crime;Information analysis;Information security;Information technology;Large-scale systems;Mobile communication;Mobile handsets;Smart cards;Testing;Fuzzing;Mobile Phones;NFC;Phishing;Spoofing;Vulnerability Analysis},
+    doi = {10.1109/ARES.2009.46}
+}
+
+@ARTICLE{VNC,
+    author = {Richardson, T. and Stafford-Fraser, Q. and Wood, K.R. and Hopper, A.},
+    journal = {Internet Computing, IEEE},
+    title = {Virtual network computing},
+    year = {1998},
+    month = {Jan},
+    volume = {2},
+    number = {1},
+    pages = {33-38},
+    keywords = {client-server systems;computer communications software;groupware;protocols;virtual machines;ORL Web site;VNC protocol;VNC system;VNC technology;application sharing;computer supported cooperative work;computing infrastructure;desktop access;home computing environments;mobile computing;platform independent;public Web browsing terminals;remote display protocol;simple display protocol;thin client architectures;ultra thin client system;virtual network computing;Access protocols;Airports;Application software;Collaborative work;Computer displays;Computer networks;Hardware;Home computing;Independent component analysis;Mobile computing},
+    doi = {10.1109/4236.656066},
+    ISSN = {1089-7801},
+}
+
+@INPROCEEDINGS{GSM,
+    author = {Meyer, U. and Wetzel, S.},
+    booktitle = {Personal, Indoor and Mobile Radio Communications, 2004. PIMRC 2004. 15th IEEE International Symposium on},
+    title = {On the impact of GSM encryption and man-in-the-middle attacks on the security of interoperating GSM/UMTS networks},
+    year = {2004},
+    month = {Sept},
+    volume = {4},
+    pages = {2876-2883 Vol.4},
+    keywords = {3G mobile communication;cellular radio;cryptography;message authentication;telecommunication security;telecommunication traffic;GSM encryption;Global System for Mobile Communication;UMTS network;Universal Mobile Telecommunication System;ciphertext-only attack;man-in-the-middle attacks;message authentication;3G mobile communication;Authentication;Base stations;Computer science;Computer security;Cryptography;GSM;Protection;Telecommunication traffic;Telephony},
+    doi = {10.1109/PIMRC.2004.1368846},
+}
+
+@incollection{AdHoc,
+    year = {2007},
+    isbn = {978-0-387-28040-0},
+    booktitle = {Wireless Network Security},
+    series = {Signals and Communication Technology},
+    editor = {Xiao, Yang and Shen, XueminSherman and Du, Ding-Zhu},
+    doi = {10.1007/978-0-387-33112-6_5},
+    title = {A Survey of Attacks and Countermeasures in Mobile Ad Hoc Networks},
+    url = {http://dx.doi.org/10.1007/978-0-387-33112-6_5},
+    publisher = {Springer US},
+    author = {Wu, Bing and Chen, Jianmin and Wu, Jie and Cardei, Mihaela},
+    pages = {103-135},
+    language = {English}
+}
+
+@INPROCEEDINGS{TwoFactor,
+    author = {Aloul, F. and Zahidi, S. and El-Hajj, W.},
+    booktitle = {Computer Systems and Applications, 2009. AICCSA 2009. IEEE/ACS International Conference on},
+    title = {Two factor authentication using mobile phones},
+    year = {2009},
+    month = {May},
+    pages = {641-644},
+    keywords = {electronic messaging;message authentication;mobile computing;mobile handsets;synchronisation;SMS-based mechanism;mobile phone;one time password generation;software token;synchronization;two factor authentication;Authentication;Banking;Computer hacking;Costs;Educational institutions;GSM;Mobile communication;Mobile handsets;Security;System testing},
+    doi = {10.1109/AICCSA.2009.5069395}
+}

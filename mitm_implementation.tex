@@ -1,0 +1,21 @@
+\chapter{MITM Implementation}
+
+In this section, we explain how we setup the environment of MITM attack. We present an automatic tool to do the MITM attack and retrieve the plaintext password of App Store using simple computer vision technique.
+
+\section{Test Environment}
+
+In our test environment, we select iPhone with iOS 6.1.1 and Apple TV with version [補]. The attack script is running on Macbook Pro with OSX 10.8.4. The Wi-Fi access point is [補]. Before the attack, all clients connect to the access point and are in the same local area network (LAN).
+
+[架構圖]
+
+\section{Attack Detail}
+
+Because all clients (iPhone, Apple TV, and attacker) are in the same LAN, the attacker deceives the iPhone to send mirroring packet to him. Here we use ARP spoofing. The attacker sends fake ARP messages onto the LAN and the aim is to associate the attacker's MAC address with the IP address of Apple TV. We configure the attacking program to emit 10 spoofing message a second. After ARP spoofing, the attacker get the packet from iPhone which should be sent to Apple TV, then initiates a shared key with iPhone. When receiving the encrypted mirroring data, the attacker decrypts the packet using the shared key, extract the screenshot, and send the unencrypted H.264 stream to Apple TV. Because Apple TV could accept both encrypted and unencrypted mirroring stream, the mirroring stream that iPhone sent is successfully shown on the Apple TV. The iPhone user won't notice any difference even though all screen data is intercept by the attacker. Thus we launch a successful invisible MITM attack.
+
+\section{Computer Vision and OCR}
+
+[圖]
+
+After retrieving unencrypted display data form the mirroring stream, we using the simple Computer Vision (CV) technique to get the plaintext password of victim's App Store account. The login window of App Store on iPhone has fix size and position. The program automatically detects if the login window pops up every frame. When the login window pops up, the program saves every change of the password field from the screen and gets several images which contains a plaintext password at the end. After using Optical Character Recognition (OCR) to recognize these images, we could get every character of plaintext password. The password field with fix font size and style improve the recognition rate of our OCR program. The result is [補].
+
+We demonstrate that the MITM attack could be fully automatic against AirPlay Mirroring. Besides App Store password, the unlock PIN code and password field in WebView are all possible to be extracted by CV. The attacker could also detect the feedback of the on-screen keyboard to implement the key logger feature.

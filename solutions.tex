@@ -1,0 +1,15 @@
+\chapter{Solutions}
+
+There are several ways to minimize the problem of credential leakage. Here we propose: (1) solutions that are integrated into the system of mobile device, (2) solutions that sanitize the mirroring stream (3) solutions that make sure mirroring users have physical access of mirroring server.
+
+\section{OS Solutions}
+
+Instead of mirroring the whole display content out, the system could sanitize the display content before sending, or change the feedback behavior when the device is mirroring. To sanitize the mirroring stream, the system could filter some sensitive information before sending the display. For example, the system do not mirror the password field and the software keyboard out so that the password field and keyboard could only be seen on the device screen. On the other hand, the system could disable the feedback when the device is mirroring. However, this method may reduce usability and the user experience.
+
+\section{Sanitize Mirroring Stream}
+
+If the system couldn't sanitize the mirroring stream, we can do it by ourself. We can build a proxy-based server that filter sensitive information. When detecting the sensitive information in the mirroring stream, e.g., password field or software keyboard, the proxy filter out it and send it to the mirroring server (e.g. Apple TV). This method could keep the feedback and do not impact the user experience.
+
+\section{Physical Access}
+
+On the other hand, we could make sure that the user has physical access to the mirroring server like Apple TV. The short distance wireless technique such as bluetooth or NFC could be used to do the key exchange and make sure no other device could launch MITM attack. This makes attackers who don't have physical access to the mirroring server couldn't initial the shared key with mobile device, and do not be able to decrypt the mirroring stream.
