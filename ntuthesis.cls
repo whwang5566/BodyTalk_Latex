@@ -155,7 +155,7 @@
     {\fontsize{20}{30}\selectfont\@titlezh\par\@titleen\par}
   \end{center}
   \addcontentsline{toc}{chapter}{口試委員會審定書}
-  \vspace{1cm}
+  \vspace{0.5cm}
   \fontsize{15}{24}\selectfont
 \hspace{30pt}本論文係\@authorzh{}君 (\@studentid)
 在\@universityzh\@institutezh{}完成之\@typezh{}學位\@classzh，%
@@ -168,7 +168,6 @@
   \fontsize{15}{30}\selectfont
   \begin{tabular}{p{2.75cm}p{12.5cm}}
     \raisebox{30pt}{口試委員：} & \rule{11.5cm}{1pt} \\
-    & \rule{5cm}{1pt}\hspace{1.5cm}\rule{5cm}{1pt} \\
     & \rule{5cm}{1pt}\hspace{1.5cm}\rule{5cm}{1pt} \\
     & \rule{5cm}{1pt}\hspace{1.5cm}\rule{5cm}{1pt} \\
     & \rule{5cm}{1pt}\hspace{1.5cm}\rule{5cm}{1pt} \\

@@ -1,0 +1,32 @@
+\contentsline {chapter}{口試委員會審定書}{ii}
+\contentsline {chapter}{誌謝}{iii}
+\contentsline {chapter}{摘要}{iv}
+\contentsline {chapter}{Abstract}{v}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Related Work}{4}
+\contentsline {section}{\numberline {2.1}Cooperative Game Design}{4}
+\contentsline {section}{\numberline {2.2}Body Language}{5}
+\contentsline {chapter}{\numberline {3}Cross-Language Experience for Current Cooperative Games}{6}
+\contentsline {section}{\numberline {3.1}Study Design}{6}
+\contentsline {section}{\numberline {3.2}Results}{7}
+\contentsline {section}{\numberline {3.3}Discussion}{8}
+\contentsline {chapter}{\numberline {4}BodyTalk Platform and Game Design}{10}
+\contentsline {section}{\numberline {4.1}System Design and Implementation}{11}
+\contentsline {section}{\numberline {4.2}Game Stage Design}{11}
+\contentsline {chapter}{\numberline {5}User Study}{14}
+\contentsline {section}{\numberline {5.1}Study Design and Participants}{14}
+\contentsline {section}{\numberline {5.2}Short Feedback Questionnaire (eSFQ) Results}{15}
+\contentsline {subsection}{\numberline {5.2.1}Fun/Enjoyment Ratings}{15}
+\contentsline {subsection}{\numberline {5.2.2}Positive and Negative Co-experience}{16}
+\contentsline {section}{\numberline {5.3}Cooperative Performance Metrics (CPM) Results}{18}
+\contentsline {section}{\numberline {5.4}Final Questionnaire Results}{20}
+\contentsline {chapter}{\numberline {6}Discussion}{22}
+\contentsline {section}{\numberline {6.1}Consistency in Game Experience}{22}
+\contentsline {section}{\numberline {6.2}Communication Patterns}{23}
+\contentsline {subsection}{\numberline {6.2.1}Speaking}{23}
+\contentsline {subsection}{\numberline {6.2.2}Body Language}{24}
+\contentsline {subsection}{\numberline {6.2.3}Both Speaking and Body Language}{24}
+\contentsline {section}{\numberline {6.3}Player Feedback}{26}
+\contentsline {section}{\numberline {6.4}System Limitation}{26}
+\contentsline {chapter}{\numberline {7}Conclusion}{28}
+\contentsline {chapter}{Bibliography}{29}

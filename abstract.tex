@@ -1,23 +1,23 @@
 \begin{abstractzh}
-
-螢幕共享 (Screen Sharing) 在 PC 上已經發展很久的技術，在 PC 上有許多螢幕共享的軟體，例如： VNC 、 Windows Remote Desktop 等。在行動裝置上，也有越來越多的設備支援螢幕鏡像輸出 (Screen Mirroring) ，例如： iOS 及 Apple TV 支援 AirPlay Mirroring 、 Android 手機上支援 Miracast ，以及 Chromecast 也即將支援和 Android 的螢幕鏡像輸出。我們發現在手機的鏡像輸出串流中，因為行動裝置的視覺回饋，可能會導致新的攻擊手法，例如：按下螢幕上的虛擬鍵盤，所按的鍵會放大，以增進使用者體驗，但是若此時攻擊者能攔截到鏡像串流的畫面資料，那麼使用者的輸入資料將會完全外洩，即使是在輸入密碼時也一樣。我們針對 AirPlay Mirroring ，實作了一套的中間人攻擊 (Man-in-the-middle Attack) 程式，能自動化的截取出 iOS 設備鏡像串流中所輸入的密碼，證明確實存在此安全問題。最後，針對此攻擊，我們也提出了幾個包括系統層面，或是安全協定層面的解決方法。
-
+在網路快速發展之下，數以百萬計的人透過網路分享照片，撰寫網誌，或是與其他人遊玩遊戲。然而，語言仍然阻礙了人們聯繫、社交以及合作。
+為了了解語言障礙對於合作遊戲體驗的影響，我們進行了一個12人的使用者測試，透過使用者遊玩三款知名的合作遊戲，我們得到的結果是，無共通語言的受測者遊玩體驗獲得了較高的挫折感以及較低的遊戲樂趣。因此我的提出透過肢體語言來跨越合作遊戲中的語言障礙，我們的系統使用了Kinect來偵測使用者的姿勢並對應到遊戲中的虛擬角色。共48位使用者參與了我們遊戲原型的使用者測試，我們發現了肢體語言可以提升遊戲樂趣以及降低挫折感，並加強合作體驗，尤其對於無共通語言的使用者來說效果更是明顯。此外，有79\%的受測者偏好有肢體語言的溝通方式。
 \end{abstractzh}
 
 \begin{abstracten}
 
-The idea of sharing contents throughout different screens had been widely applied on personal computers for many years, such as the VNC, Remote Desktop and other related applications. While on mobile devices, the similar technique (a.k.a Screen Mirroring) had become more and more popular through these years. For instance, Apple had developed AirPlay Mirroring technique to stream contents from iOS devices to Apple TVs; Google also developed corresponding technique to share screen contents between Android devices and Chromecasts. Based on the observation of how users interact with such technique on real devices, we discovered a new attacking approach base on the fact that the visual feedbacks (e.g. the selected key will be highlighted when typing with virtual keyboard) on mobile devices are not well protected during the streaming process. To prove our concept, we implemented a system using man-in-the-middle attack approach to steal the secret codes when users enter them on their own devices while streaming contents to the remote screen. Finally, we provided some possible solutions to prevent the proposed attacking approach.
+The rapid growth of the Internet has enabled billions of people to share photos, to blog, and to play games with each other. However, languages remain a barrier for people to connect, socialize, and cooperate around the world. 
+We conducted a 12-person user study to understand how language barriers affect cooperative experiences through 3 popular cooperative games. Results showed that participants without common languages rated their experience as significantly more frustrating and less fun. We propose using body language to transcend language barriers for cooperative games. Our system, BodyTalk, uses Kinect sensors to track users' postures and share them as avatars in real-time with other users over the Internet. Our 48-person user study using our prototype game showed that cooperative experience with body language was more fun and less frustrating, and co-experience was improved for all participants, especially for those without common languages. 
+Also, 79\% of the participants preferred having body language communication. 
 
 \end{abstracten}
 
 \begin{comment}
 \category{I2.10}{Computing Methodologies}{Artificial Intelligence --
 Vision and Scene Understanding} \category{H5.3}{Information
-Systems}{Information Interfaces and Presentation (HCI) -- Web-based
+Systems}{Information Interfaces and Presentation (HCI) -- Game-based
 Interaction.}
 
 \terms{Design, Human factors, Performance.}
 
-\keywords{Region of interest, Visual attention model, Web-based
-games, Benchmarks.}
+\keywords{Cooperative game, Body language, Game design, Communication Pattern, Kinect, Human computer interaction.}
 \end{comment}

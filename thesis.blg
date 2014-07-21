@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: abbrv.bst
+Database file #1: reference_.bib
+Warning--to sort, need author or key in I1
+Warning--to sort, need author or key in I2
+Warning--to sort, need author or key in I3
+Warning--to sort, need author or key in I4
+Warning--to sort, need author or key in GD3
+Warning--to sort, need author or key in unity
+Warning--empty booktitle in CG2
+You've used 22 entries,
+            2118 wiz_defined-function locations,
+            621 strings with 6303 characters,
+and the built_in function-call counts, 5451 in all, are:
+= -- 518
+> -- 140
+< -- 3
++ -- 66
+- -- 40
+* -- 229
+:= -- 824
+add.period$ -- 70
+call.type$ -- 22
+change.case$ -- 86
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 288
+empty$ -- 618
+format.name$ -- 40
+if$ -- 1261
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 16
+newline$ -- 107
+num.names$ -- 32
+pop$ -- 185
+preamble$ -- 1
+purify$ -- 64
+quote$ -- 0
+skip$ -- 171
+stack$ -- 0
+substring$ -- 182
+swap$ -- 60
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 88
+warning$ -- 7
+while$ -- 38
+width$ -- 24
+write$ -- 217
+(There were 7 warnings)
